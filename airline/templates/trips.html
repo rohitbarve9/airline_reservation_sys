@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>session['customer_name'] 's trips</title>
+</head>
+<style>
+	 table, th, td {
+  border: 1px solid black;
+}
+</style>
+<body>	
+		<table>
+			<tr>
+				<th>Trip ID</th>
+				<th>Flight Number</th>
+				<th>Departure Airport</th>
+				<th>Arrival Airport</th>
+			</tr>
+			{% for i in range(length) %}
+				<tr>
+					{% for j in trips[i] %}
+						<td>{{j}}</td>
+					{% endfor %}
+				</tr>
+			{% endfor %} 
+		</table>
+		<br><br>
+		<a href="{{url_for('user')}}">BACK</a>
+</body>
+</html>

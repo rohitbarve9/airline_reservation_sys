@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking confirmation</title>
+</head>
+<body>
+	<a href="{{url_for('logoutpilot')}}">Logout</a>
+	<br><br><br><br>
+	<H1>Booking Done!</H1>
+	<h2>Pilot Num: {{session['pilot_num']}}</h2>
+	<br><br><br><br>
+	<a href="{{url_for('pilot')}}">Back to home</a>
+</body>
+</html>

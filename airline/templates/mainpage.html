@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+</head>
+<style>
+.b1{
+  background-color: rgb(132, 154, 224);
+  position: absolute;
+  width: 400px;
+  top: 200px;
+  right: 510px;
+  padding: 100px;
+  margin: auto;
+}
+.b2{
+  background-color: rgb(132, 154, 224);
+  position: absolute;
+  width: 400px;
+  top: 200px;
+  left: 20px;
+  padding: 100px;
+  margin: auto;
+}
+.b3{
+  background-color: rgb(132, 154, 224);
+  position: absolute;
+  width: 400px;
+  top: 200px;
+  right: 20px;
+  padding: 100px;
+  margin: auto;
+}
+</style>
+<body>
+	<h1>Main page</h1><br><br>
+	<a href="{{url_for('login')}}"><button class="b1">CUSTOMER</button></a><br><br>
+	<a href="{{url_for('loginpilot')}}"><button class="b2">PILOT</button></a><br><br>
+	<a href="{{url_for('loginadmin')}}"><button class="b3">ADMIN</button></a>
+</body>
+
+</html>

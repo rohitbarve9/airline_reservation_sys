@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Current/Previous Jobs</title>
+</head>
+<style>
+	 table, th, td {
+  border: 1px solid black;
+}
+</style>
+<body>
+	<table>
+			<tr>
+				<th>Flight Number</th>
+				<th>Airline</th>
+				<th>Departure Airport</th>
+				<th>Arrival Airport</th>
+			</tr>
+			{% for i in range(length) %}
+				<tr>
+					{% for j in results[i] %}
+						<td>{{j}}</td>
+					{% endfor %}
+				</tr>
+			{% endfor %} 
+		</table>
+		<br><br>
+		<a href="{{url_for('pilot')}}">BACK</a>
+</body>
+</html>

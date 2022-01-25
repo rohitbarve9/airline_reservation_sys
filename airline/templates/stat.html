@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Statistics</title>
+</head>
+<style>
+	 table, th, td {
+  border: 1px solid black;
+}
+</style>
+<body>
+	<table>
+		<tr>
+			<th>Busiest Pilot</th>
+			<th>Most Loyal Customer</th>
+			<th>Most Popular destination</th>
+		</tr>
+		<tr>
+			<td>{{busy_pilot}}</td>
+			<td>{{loyal_customer}}</td>
+			<td>{{popular_dest}}</td>
+		</tr>
+	</table>
+	<br><br>
+	<a href="{{url_for('admin')}}">Back</a>
+</body>
+</html>

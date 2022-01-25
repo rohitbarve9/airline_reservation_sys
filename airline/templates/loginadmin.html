@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADMIN LOGIN</title>
+</head>
+<style>
+.boxed3{
+  background-color: rgb(132, 154, 224);
+  position: absolute;
+  width: 300px;
+  top: 200px;
+  right: 500px;
+  padding: 50px;
+  margin: auto;
+}
+</style>
+<body>
+	<div class="boxed3">
+		<h1>Admin</h1>
+		<form action="#" method="POST">
+			<input type="text" name="admin_id" placeholder="ADMIN ID">
+			<input type="text" name="password" placeholder="Password"><br><br>
+			<input type="submit" value="Sign In">
+		</form>
+		<a href="{{url_for('main_page')}}">BACK TO MAIN PAGE</a>
+	</div>
+</body>
+</html>

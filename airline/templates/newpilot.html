@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add pilot profile</title>
+</head>
+<body>
+	<form method="POST" action="#">
+		<label>Create unique pilot number: </label>
+		<input type="text" name="pilot_num" placeholder="Pilot ID"><br><br>
+		<label>Name: </label>
+		<input type="text" name="pilot_name">
+		<br><br>
+		<label>Airline: </label>
+		<input type="text" name="airline">
+		<br><br>
+		<label>Address: </label>
+		<textarea cols="20" rows="3" name="address"></textarea>
+		<label>City: </label>
+		<input type="text" name="city">
+		<br><br>
+		<label>State: </label>
+		<input type="text" name="state">
+		<br><br>
+		<label>Zip: </label>
+		<input type="text" name="zip">
+		<br><br>
+		<label>Phone number: </label>
+		<input type="text" name="phone_number" placeholder="Phone number" size="10">
+		<br><br>
+		<label>Gender: </label> 
+		<input type="text" name="gender">
+		<br><br>
+		<label>Date of birth: </label> 
+		<input type="date" name="date_of_birth">
+		<br><br>
+		<label>Age: </label>
+		<input type="text" name="age">
+		<br><br>
+		<input type="submit" name="submit" value="Sign Up">
+		<br><br><br>
+	</form>
+	<br>
+	<a href="{{url_for('admin')}}">BACK</a>
+</body>
+</html>

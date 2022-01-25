@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add flight</title>
+</head>
+<style>
+	  input[type=text], select {
+	  width: 50%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 60%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.boxed{
+  width: 300px;
+  border: 15px solid green;
+  margin: 80px;
+  padding: 50px;
+  margin: 20px;
+}
+.cen{
+  margin: auto;
+  width: 33%;
+  border: 3px solid green;
+  padding: 10px;
+}
+</style>
+<body>
+	<div class="cen">
+		<div class="boxed">
+		<form method="POST" action='#'>
+		<label>Flight Number</label>
+		<input type="text" name="flight_num"><br><br>
+		<label>Plane Type</label>
+		<input type="text" name="plane_type"><br><br>
+		<label>Airline</label>
+		<input type="text" name="airline"><br><br>
+		<label>Departure Airport</label>
+		<input type="text" name="depart_airport"><br><br>
+		<label>Arrival Airport</label>
+		<input type="text" name="arrive_airport"><br><br>
+		<label>Depart Gate</label>
+		<input type="text" name="depart_gate"><br><br>
+		<label>Arrive Gate</label>
+		<input type="text" name="arrive_gate"><br><br>
+		<input type="submit" name="submit" value="ADD">
+	</form>
+	</div>
+	<a href="{{url_for('admin')}}">BACK</a>
+	</div>
+</body>
+</html>

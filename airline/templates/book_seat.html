@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select seat</title>
+</head>
+<style>
+  table, th, td {
+  border: 1px solid black;
+}
+</style>
+<body>
+	<label>Flight number: {{flight_num}}</label>
+	<label>Departure airport: {{depart_airport}}</label>
+	<label>Arrival airport: {{arriv_airport}}</label>
+	<br><br><br><br>
+	<form method="POST" action='#'>
+		<table>
+			<tr>
+				<th>Seat Available</th>
+			</tr>
+			{% for i in seating_options_available %}
+				<tr>
+					<td>{{i}}</td>
+					<td><input type="radio" name="i" value={{i}}></td>
+				</tr>
+			{% endfor %} 
+		</table>
+		<br><br>
+		<input type="submit" name="submit" value="BOOK SEAT">
+	</form>
+</body>
+</html>

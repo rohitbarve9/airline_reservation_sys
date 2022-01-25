@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pilot Home</title>
+</head>
+<style>
+	.buttons1{
+		border-radius: 2px;
+		background-color: rgb(191, 202, 219);
+		position: absolute;
+		width: 300px;
+		top: 200px;
+		left: 300px;
+		padding: 50px;
+		margin: auto
+	}
+
+	.buttons2{
+		border-radius: 2px;
+		background-color: rgb(191, 202, 219);
+		position: absolute;
+		width: 300px;
+		top: 200px;
+		left: 800px;
+		padding: 50px;
+		margin: auto
+	}	
+	.cus{
+		text-align: center
+	}
+</style>
+<body>
+	<a href="{{url_for('logoutpilot')}}">Logout</a>
+	<br><br><br>
+	<h1 class="cus">PILOT HOMEPAGE</h1>	
+	<a href="{{url_for('book_job')}}"><button class="buttons1">New Job</button></a>
+	<br><br><br>
+	<a href="{{url_for('jobs')}}"><button class="buttons2">Current Jobs</button></a>
+</body>
+</html>
